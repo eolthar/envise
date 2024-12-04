@@ -78,6 +78,7 @@ env.set('GITHUB', '62TEh28e72Hsi2937eHw8');
 
 ```js
 env.delete('GITHUB');
+env.delete.GITHUB;
 ```
 
 ### clear
@@ -85,6 +86,7 @@ env.delete('GITHUB');
 
 ```js
 env.clear();
+env.clear;
 ```
 
 ### keys
@@ -92,6 +94,7 @@ env.clear();
 
 ```js
 console.log(env.keys()); // [ "TOKEN", "API_KEY", "GITHUB" ]
+console.log(env.keys);
 ```
 
 ### save
@@ -100,6 +103,7 @@ console.log(env.keys()); // [ "TOKEN", "API_KEY", "GITHUB" ]
 ```js
 env.save('private/.env'); // Сохранить в указанный файл
 env.save();               // Сохранить в файл по умолчанию
+env.save;
 ```
 
 ### load
