@@ -1,6 +1,6 @@
 {
     "name": "envise",
-    "description": "A lightweight and fast package for retrieving and checking environment variables.",
+    "description": "Легкий и быстрый пакет для извлечения и проверки переменных окружения",
     "version": "1.2.1",
     "main": "main.js",
     "author": "Mlad (https://github.com/eolthar)",
