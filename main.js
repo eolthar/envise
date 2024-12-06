@@ -11,37 +11,23 @@ class Envise {
     }
 
     load(path = ".env") {
-        const fullPath = resolve(process.cwd(), path);
-
-        if (!existsSync(fullPath)) {
-            console.warn(`[Envise] .env file not found: ${fullPath}`);
-            return;
-        }
+        const full = resolve(process.cwd(), path);
+        if (!existsSync(full)) return console.warn(`[Envise] .env file not found: ${full}`);
 
         try {
-            const content = readFileSync(fullPath, 'utf8');
-            this.#variables = this.#parse(content);
-            console.log(`[Envise] .env file loaded: ${fullPath}`);
+            this.#variables = this.#parse(readFileSync(full, 'utf8'));
         } catch (error) {
             console.error(`[Envise] Failed to load .env file: ${error.message}`);
         }
     }
 
     save(path = ".env") {
-        const fullPath = resolve(process.cwd(), path);
-        
-        if (!existsSync(fullPath)) {
-            console.warn(`[Envise] .env file not found: ${fullPath}`);
-            return;
-        }
-
-        const content = Object.entries(this.#variables)
-            .map(([key, value]) => `${key}=${this.#escape(value)}`)
-            .join('\n');
+        const full = resolve(process.cwd(), path);
+        if (!existsSync(full)) return console.warn(`[Envise] .env file not found: ${full}`);
+        const content = Object.entries(this.#variables).map(([key, value]) => `${key}=${this.#escape(value)}`).join('\n');
 
         try {
             writeFileSync(fullPath, content, 'utf8');
-            console.log(`[Envise] .env file saved: ${fullPath}`);
         } catch (error) {
             console.error(`[Envise] Failed to save .env file: ${error.message}`);
         }
