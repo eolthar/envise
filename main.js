@@ -7,6 +7,7 @@ class Envise {
     constructor(path) {
         this.load(path);
         this.get = this.#proxy((key) => this.#variables[key]);
+        this.delete = this.#proxy((key) => this.#delete(key));
         this.exists = this.#proxy((key) => key in this.#variables);
     }
 
@@ -45,7 +46,7 @@ class Envise {
         this.#variables[key] = value;
     }
 
-    delete(key) {
+    #delete(key) {
         if (key in this.#variables) {
             delete this.#variables[key];
         }
