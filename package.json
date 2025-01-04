@@ -1,0 +1,30 @@
+{
+    "name": "envise",
+    "description": "Легкий и быстрый пакет для извлечения и проверки переменных окружения",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "author": "Mlad (https://github.com/eolthar)",
+    "license": "GPL-3.0",
+    "devDependencies": {
+        "@types/node": "^22.10.5",
+        "typescript": "^5.7.2"
+    },
+    "scripts": {
+        "build": "tsc"
+    },
+    "keywords": [
+        "env",
+        "variables",
+        "config",
+        "file",
+        "configuration",
+        "settings",
+        "handler",
+        ".env",
+        "management",
+        "reader",
+        "writer",
+        "environment"
+    ]
+}
