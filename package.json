@@ -1,0 +1,7 @@
+{
+    "name": "envise",
+    "description": "Легкий и быстрый пакет для извлечения и проверки переменных окружения",
+    "version": "1.0.0",
+    "main": "main.js",
+    "author": "Mlad (https://github.com/eolthar)"
+}
