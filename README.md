@@ -1,6 +1,6 @@
 # envise
-Легкий и быстрый пакет для извлечения и проверки переменных окружения.
+A lightweight and fast package for extracting and validating environment variables.
 
 ```
-npm i https://github.com/eolthar/envise.git
+npm i github:eolthar/envise
 ```
