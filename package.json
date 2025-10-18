@@ -3,5 +3,6 @@
     "description": "A lightweight and fast package for extracting and validating environment variables",
     "version": "1.0.0",
     "main": "main.js",
-    "author": "Mlad (https://github.com/eolthar)"
+    "author": "Mlad (https://github.com/eolthar)",
+    "files": [ "/main.js" ]
 }
