@@ -1,5 +1,5 @@
 {
-    "name": "envise",
+    "name": "@eolthar/envise",
     "description": "A lightweight and fast package for extracting and validating environment variables",
     "version": "1.0.0",
     "main": "main.js",
